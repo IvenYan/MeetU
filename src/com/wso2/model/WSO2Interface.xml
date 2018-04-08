@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="com.wso2.model.Mapper">
+    <resultMap type="com.wso2.model.WSO2Interface" id="WSO2InterfaceMapper">
+        <id column="id" property="ID"/>
+        <result column="interfacename" property="interfaceName"/>
+        <result column="interfaceauthor" property="interfaceAuthor"/>
+        <result column="operationdate" property="operationDate"/>
+        <result column="interfacedesc" property="interfaceDesc"/>
+    </resultMap>
+
+
+    <select id="getWSO2Interface" resultMap="WSO2InterfaceMapper">
+        select * from WSO2Interface
+    </select>
+    <insert id="insertWSO2Interface"> insert into WSO2Interface (interfacename, interfaceauthor, operationdate, interfacedesc) values
+        ( #{interfacename}, #{interfaceauthor}, #{operationdate},
+        #{interfacedesc})
+    </insert>
+
+
+
+
+
+</mapper>

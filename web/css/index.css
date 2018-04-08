@@ -1,0 +1,50 @@
+/** {*/
+    /*margin: 0px;*/
+    /*padding: 0px;*/
+    /*!*display:none;*!*/
+    /*!*overflow:-Scroll;*!*/
+    /*overflow-x:hidden*/
+/*}*/
+body {
+    margin: 0px;
+    padding: 0px;
+    /*overflow:-Scroll;*/
+    overflow-x:hidden;
+}
+
+.header {
+    height: 15%;
+    background: #313131;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 1%;
+    /*border: 0px;*/
+}
+
+.banner{
+    height: 15%;
+    background: #313131;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 1%;
+}
+.menu{
+    margin-left: 0%;
+    margin-right: 70%;
+}
+
+.content{
+    height: 60%;
+    background: red;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 1%;
+}
+
+.tail{
+    height: 10%;
+    background: gainsboro;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 1%;
+}

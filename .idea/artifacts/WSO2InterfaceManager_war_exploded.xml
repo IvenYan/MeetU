@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="WSO2InterfaceManager:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/WSO2InterfaceManager_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="WSO2InterfaceManager/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="WSO2InterfaceManager" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

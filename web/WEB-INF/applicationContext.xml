@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- 加载配置属性文件 -->
+    <!--<context:property-placeholder ignore-unresolvable="true" location="classpath:constant.properties"/>-->
+
+    <!-- 开启异步任务（同时开启定时器注解扫描） -->
+    <!--<task:annotation-driven />-->
+    <!-- 使用@AspectJ风格的切面声明 -->
+    <!-- <aop:aspectj-autoproxy/> -->
+
+    <!-- 引入Mybatis配置 -->
+    <!--<import resource="./spring-mybatis.xml"/>-->
+
+    <!-- 引入Socket配置 -->
+    <!--<import resource="spring-socket.xml"/>-->
+
+    <!-- 引入MongoDB配置 -->
+    <!--<import resource="test/mongo-config.xml"/>-->
+
+    <!-- 引入定时器任务配置 -->
+    <!-- <import resource="classpath*:com/demo/config/spring-job.xml"/> -->
+
+    <!-- 引入hibernate4配置 -->
+    <!-- <import resource="spring-hibernate.xml"/> -->
+
+    <!-- 引入缓存配置 -->
+    <!-- <import resource="spring-cache.xml"/> -->
+
+    <!-- 引入CXF配置 -->
+    <!--<import resource="test/spring-cxf.xml"/>-->
+
+    <!-- 引入Redis配置（无需如此配置，直接使用RedisUtil即可） -->
+    <!-- <import resource="test/spring-jedis.xml"/> -->
+</beans>
