@@ -46,7 +46,14 @@
 </head>
 <!--bgcolor="#FAD9A6"-->
 <body class="container" bgcolor="#FAD9A6">
-<div class="header container" style="margin-top:5px;"><h3><span class="label label-primary">Iven 个人管理</span></h3></div>
+<div class="header container" style="margin-top:5px;height:80px;">
+    <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+            <img src="material/soldiers.png" style="height: 50px;width: 50px;margin:auto;"
+                 alt="通用的占位符缩略图">
+        </a>
+    </div>
+</div>
 <div class="banner container" style="margin-top:5px;">
     <div id="myCarousel" class="carousel slide">
         <!-- 轮播（Carousel）指标 -->
@@ -161,20 +168,15 @@
                 </div>
             </div>
         </div>
-        <div class="checkbox" style="padding-left: 20px;">
-            <label>
-                <input type="checkbox"/>请打勾
-            </label>
-        </div>
     </div>
-    <div class="" style=" display:inline-block;margin-right:10px;float:left">
-        <form class="container form-inline" role="form">
+    <div class="" style="width:68%; display:inline-block;margin-left:20px;float:left">
+        <form class="form-inline" role="form">
 
-            <div class="form-group" style=" display:inline-block;margin-right:10px;float:left">
-                <label class="sr-only" for="name" >名称</label>
-                <input type="text" class="container form-control" id="name" placeholder="请输入名称" />
-            </div>
-            <div style=" display:inline-block;margin-right:10px;float:right"><button type="submit" class="btn btn-default">众里寻他</button></div><!--
+            <div class="form-group">
+                <label class="sr-only" for="name" style="width:80%;">名称</label>
+                <input type="text" class="form-control" id="name" style="width:580px;" placeholder="请输入名称">
+                <button type="submit" class="btn btn-default">众里寻他</button>
+            </div><!--
             <div class="form-group">
                 <label class="sr-only" for="inputfile">文件输入</label>
                 <input type="file" id="inputfile">
@@ -184,6 +186,25 @@
     </div>
 </div>
 
+<div class="container" style="padding-top: 15px;">
+    <!-- <div style="text-align: center;margin:0 auto;width: 550px;"> -->
+    <div style="text-align: center;margin:0 auto;width: 950px;height: 79px;">
+        <div style="width: 800px;height: 79px;margin:0 auto;">
+            <div style="float:left;font-size:12px;text-align:center;">
+                <p class="text-center" style="color:#666666;">
+                    Copyright2018 MeetU科技有限公司 All Rights Reserved<br/>
+                    <a href="http://www.miitbeian.gov.cn">京ICP备05070602号</a>
+                    邮箱：<a href="mailto:support@beian.gov.cn">support@beian.gov.cn</a>
+                    <br/>
+                </p>
+                <form id="recordform" action="/portal/registerSystemInfo" method="post">
+                    <input type="hidden" name="recordcode" value="京ICP备030173号"/>
+                    <input type="hidden" name="token" value="cb4c28a6-aef0-4583-8d8c-6defb2b7bb87"/>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--<div class="content container">-->
 <!--</div>-->
